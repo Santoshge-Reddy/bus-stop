@@ -33,13 +33,18 @@ body{
     margin: 0;
     display: flex;
     /* Works well with 100% width  */
-    width: 32.05em;
+    /*width: 32.05em;*/
     font-size: 1.5em;
-    padding: 0 2.85em;
-    position: relative;
+    /*padding: 0 2.85em;*/
+    /*position: relative;*/
     align-items: center;
     justify-content: center;
     background-color: var(--bgColorMenu);
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
     
 }
 
@@ -142,4 +147,135 @@ body{
     .menu{
         font-size: .8em;
     }
+}
+
+/*navigation theme*/
+
+/*transaction table*/
+
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+    /*text-align: center;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+p{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  /*text-align: center;*/
+  margin-bottom: 15px;
+}
+
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+/*body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}*/
+section{
+  margin: 50px;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+
+/*transaction table*/
+
+
+
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  padding: 5px;
+  /*background-color: #fff;*/
+  /*border: 1px solid #999;*/
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#app-container {
+  position: relative;
+  /*background-color: red;*/
+  width: 100%;
+  height: 100%;
+  /*border: 2px solid blue;*/
+  /*left: 0;*/
+  margin-left: auto;
+  margin-right: auto;
+
+  /*padding: 20px 20px 0 20px;*/
+}
+
+#map{
+    height: 90vh;
+}
+
+#home{
+    height: 90vh;
+    z-index: 9999
+}
+
+.hide{
+    display: none;
 }

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: #d7d7d7;
+}
+.container__elements {
+  position: absolute;
+  left: 50%;
+  top: -350px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.phone__container {
+  background-image: url("https://assets.codepen.io/3522775/Cart.png");
+  background-size: cover;
+  overflow: hidden;
+  width: 324px;
+  height: 650px;
+  border-radius: 35px;
+  border: 5px solid black;
+  position: relative;
+}
+.phone__container-navbar {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 68px;
+  background-color: white;
+}
+.phone__container-navbar-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plus__container {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff3841;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideup__container {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+.slideup__container-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slideup__container-content-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.slideup__container-content-item-circle {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideup__container-content-item-text {
+  padding: 0;
+  margin: 7px 0;
+  font-size: 12px;
+}

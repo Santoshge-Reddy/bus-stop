@@ -14,8 +14,39 @@ let activeItem = menu.querySelector(".active");
 function clickItem(item, index) {
 
     menu.style.removeProperty("--timeOut");
-    
+
+    console.log(activeItem);
+    console.log(item);
+
+    var home = document.getElementById('home')
+    var transaction = document.getElementById('transaction')
+    var about = document.getElementById('about')
+    var map = document.getElementById('map')
+
+    transaction.classList.add('hide')        
+    about.classList.add('hide')        
+    home.classList.add('hide')   
+    map.classList.add('hide')   
+
+    if (item.classList.contains("map")) {
+
+        map.classList.remove('hide')        
+
+    }else if(item.classList.contains("home")){
+
+        home.classList.remove('hide') 
+
+    }else if(item.classList.contains("transaction")){
+
+        transaction.classList.remove('hide') 
+
+    }else if(item.classList.contains("about")){
+        
+        about.classList.remove('hide') 
+    } 
+
     if (activeItem == item) return;
+
     
     if (activeItem) {
         activeItem.classList.remove("active");
